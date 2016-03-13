@@ -1,0 +1,13 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  @include font-size(3.5);
+  display: inline;
+  color: #fff;
+  letter-spacing: 3px;
+  margin-top: 0;
+  padding-left: 43px;
+  background: url(../assets/images/logo.jpg) no-repeat left 50%;
+}
