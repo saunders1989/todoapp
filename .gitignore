@@ -4,4 +4,6 @@ coverage/
 .sass-cache/
 .idea/
 .tmp/
-dist/
+*.log
+
+build/
