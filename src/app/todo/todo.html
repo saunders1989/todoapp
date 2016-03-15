@@ -1,4 +1,8 @@
 <div class="container">
-
+  <ul>
+    <li ng-repeat="task in todo.tasks track by $index">
+      {{task}}
+    </li>
+  </ul>
 
 </div>

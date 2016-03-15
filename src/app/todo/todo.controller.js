@@ -11,8 +11,8 @@
 
     var service = todoService;
 
-    var tasks = service.loadTodo();
-    console.log(tasks);
+    vm.tasks = service.loadTodo();
+
 
   }
 })();
