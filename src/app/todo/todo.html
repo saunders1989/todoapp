@@ -1,7 +1,28 @@
 <div class="container">
   <ul>
-    <li ng-repeat="task in todo.tasks track by $index">
-      {{task}}
+    <li class="task" ng-repeat="task in todo.tasks track by $index">
+      <div class="task-col">
+        <div class="task__date-container">
+          <span class="task__date task__date--day">{{task.date | date : 'dd'}}</span>
+          <span class="task__date task__date--month">{{task.date | date : 'MMM'}}</span>
+        </div>
+      </div>
+      <div class="tasl-col">
+        <div class="task-details">
+          <h2 class="task-details__task">{{task.task}}</h2>
+          <div class="task-sub-details">
+            <p>
+              <i class="user-icon"></i>
+              {{task.person}}
+            </p>
+            <ul>
+              <li ng-repeat="tag in task.tags">
+                <span class="tag">{{tag}}</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </li>
   </ul>
 

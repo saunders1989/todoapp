@@ -5,9 +5,9 @@
     .module('todoApp')
     .factory('todoService', todoService);
 
-    todoService.$inject = ['$q', '$firebaseArray'];
+    todoService.$inject = ['$q', 'Firebase', '$firebaseArray'];
 
-    function todoService($q, $firebaseArray) {
+    function todoService($q, Firebase, $firebaseArray) {
       var url = 'https://saunders1989todo.firebaseio.com';
       var ref = new Firebase(url);
 
