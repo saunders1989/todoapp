@@ -1,12 +1,12 @@
 {
-  "task1": {
+  "task": {
     "date": "2016-03-17T10:25:42.906Z",
     "task": "build shit",
     "person": "Noble Simon",
     "tags": ["shopping", "bills"],
     "location": "Home"
   },
-  "task2": {
+  "task": {
     "date": "2016-03-18T10:25:42.906Z",
     "task": "build shit",
     "person": "Noble Simon",
