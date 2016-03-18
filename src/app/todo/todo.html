@@ -7,19 +7,22 @@
           <span class="task__date task__date--month">{{task.date | date : 'MMM'}}</span>
         </div>
       </div>
-      <div class="tasl-col">
+      <div class="task-col task-col--details">
         <div class="task-details">
           <h2 class="task-details__task">{{task.task}}</h2>
           <div class="task-sub-details">
-            <p>
-              <i class="user-icon"></i>
-              {{task.person}}
-            </p>
-            <ul>
-              <li ng-repeat="tag in task.tags">
-                <span class="tag">{{tag}}</span>
-              </li>
-            </ul>
+            <div class="user-container">
+              <p class="user">
+                <i class="user__icon fa fa-user"></i>
+                {{task.person}}
+              </p>
+              <ul class="tags">
+                <li class="tags__tag-list" ng-repeat="tag in task.tags">
+                  <span class="tags__item">{{tag}}</span>
+                </li>
+              </ul>
+            </div>
+            <p class="location"><i class="glyphicon glyphicon-map-marker location__icon"></i>{{task.location}}</p>
           </div>
         </div>
       </div>
